@@ -1,0 +1,40 @@
+﻿
+
+
+
+
+form {
+    margin: 20px auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color:#B8A628;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #8B4513;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background-color:#34B28C;
+    }

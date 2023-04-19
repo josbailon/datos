@@ -1,0 +1,60 @@
+﻿
+
+    <!DOCTYPE html>
+    <html>
+	<head>
+		<title>Formulario de ingreso de clientes</title>
+		<link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+		<script>
+	function validarFormulario() {
+				var nombre = document.forms["miFormulario"]["nombre"].value;
+				var apellido = document.forms["miFormulario"]["apellido"].value;
+				var email = document.forms["miFormulario"]["email"].value;
+				var telefono = document.forms["miFormulario"]["telefono"].value;
+				var direccion = document.forms["miFormulario"]["direccion"].value;
+
+				if (nombre == "") {
+					alert("Por favor ingrese su nombre.");
+					return false;
+				}
+
+				if (apellido == "") {
+					alert("Por favor ingrese su apellido.");
+					return false;
+				}
+
+				if (email == "") {
+					alert("Por favor ingrese su email.");
+					return false;
+				}
+
+				if (telefono == "") {
+					alert("Por favor ingrese su teléfono.");
+					return false;
+				}
+
+				if (direccion == "") {
+					alert("Por favor ingrese su dirección.");
+					return false;
+				} 
+                                alert("El formulario ha sido enviado con éxito.");
+			                return true;
+			}</script>
+	</head>
+    <body>
+        <h1>Formulario de ingreso de clientes</h1>
+        <form name="miFormulario" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
